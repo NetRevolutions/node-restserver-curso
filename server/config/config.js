@@ -5,7 +5,9 @@ process.env.PORT = process.env.PORT || 3000;
 
 
 //  =================================
-//  Puerto
+//  Entorno
+//  La variable process.env.NODE_ENV la establece heroku, 
+//  por eso sino viene nada por defecto es 'dev'
 //  =================================
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
