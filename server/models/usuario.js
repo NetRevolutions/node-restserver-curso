@@ -42,6 +42,7 @@ let usuarioSchema = new Schema({
     }
 });
 
+// Con esto evitamos devolver el password en el JSON
 usuarioSchema.methods.toJSON = function() {
     let user = this;
     let userObject = user.toObject();
